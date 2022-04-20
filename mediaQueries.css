@@ -1,0 +1,44 @@
+@media only screen and (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  nav .mainbar {
+    display: block;
+    grid-column: 8 / 9;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  nav ul li {
+    display: none;
+  }
+}
+main .container .info {
+  grid-column: 2 / 10;
+  grid-row: 4 / 8;
+}
+main .container h2 {
+  font-size: 3.5em;
+}
+main .container2 .info2 {
+  grid-column: 2 / 10;
+  grid-row: 4 / 8;
+}
+main .container2 h2 {
+  font-size: 3.5em;
+}
+footer {
+  text-align: center;
+}
+/*------------------------------Contacto------------------------------*/
+@media (min-width: 768px){
+.body {
+  padding: 0 4rem;
+}
+.contacto{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.contacto > *{
+  padding: 2em;
+}
+}

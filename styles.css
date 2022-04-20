@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+nav {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat 8, 1fr;
+  align-items: center;
+}
+h1 {
+  font-family: "montserrat", "sans-serif";
+  color: rgb(230, 52, 52);
+  font-size: 3em;
+  padding-left: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+nav {
+  animation-name:titulo;
+  animation-duration: 15s;
+  
+}
+@keyframes titulo{
+  0% {background: rgb(255, 153, 0);}
+  25%{background: rgb(53, 200, 236);}
+  50% {background:rgb(246, 248, 100);}
+  75% {background: rgb(220, 107, 235)}
+  100%{background: rgb(85, 85, 233);}
+}
+nav ul {
+  grid-column: 4 / 7;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: rgb(230, 52, 52);
+}
+nav ul a:hover {
+  color: rgb(22, 2, 2);
+}
+nav .mainbar {
+  display: none;
+}
+main .container {
+  height: 80vh;
+  background-image: url(./Multimedia/bike1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+main .container .info {
+  grid-column: 7 / 10;
+  grid-row: 3 / 7;
+  color: #fff;
+}
+main .container .info h2 {
+  font-size: 5em;
+  color: white;
+}
+.container2 {
+  height: 80vh;
+  background-image: url(./Multimedia/bike2.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+main .container2 .info2 {
+  grid-column: 5 / 3;
+  grid-row: 3 / 7;
+  color: rgb(230, 52, 52);
+}
+main .container2 .info2 h2 {
+  font-size: 5em;
+  color: rgb(230, 52, 52);
+}
+footer p {
+  color: white;
+  font-size: 30px;
+  background-color: rgb(230, 52, 52);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+footer {
+  background-color: #fff;
+  height: 10px;
+  width: 100%;
+  color: rgb(230, 52, 52);
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(22, 2, 2);
+}
+.subir{
+  height:35px;
+  width:35px;
+  font-size: 30px;
+  line-height:32px;
+  color: rgb(63, 134, 240);
+  text-align: center;
+  position: fixed;
+  right:20px;
+  bottom:20px;
+}
+/*------------------------------Contacto------------------------------*/
+*{
+  box-sizing: border-box;
+}
+.body{
+  background-color:#181818 ;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+padding: 0.1.5em;
+}
+.content{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+.logo{
+  text-align: center;
+  font-size:3em
+}
+.logo span{
+  color:#b70e21;
+}
+.contacto{
+  box-shadow: 0 0 20px 0 rgb(15, 100, 175)
+}
+.contacto > *{
+  padding: 1em
+}
+.contacto-form{
+  background: #2b2a2a;
+
+}
+.contacto-info{
+  background: rgb(252, 75, 75);
+}
+
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea{
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #b70e21;
+}
+.contacto-form form button{
+  background:#b70e21;
+  color: #ffffff;
+  border: 0;
+  text-transform: capitalize;
+  padding: 1em;
+}
+.contacto-form form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contacto-form form .bloque{
+grid-column: 1 / 3;
+}
+.contacto-form form p{
+  margin: 0;
+  padding: 1em;
+}
+.contacto-form form button:hover,
+.contacto-form button:focus{
+  background: #d66035;
+  color: #fff;
+  transition:background-color 1s ease-out;
+  outline: 0;
+}
+.contacto-info h4,
+.contacto-info ul,
+.contacto-info iframe {
+text-align: center;
+margin: 0 0 1rem 0;
+}
+.contacto-info ul{
+  list-style: none;
+  padding: 0;
+}
+.contacto-info ul li{
+  padding: .3em;
+}
